@@ -1,0 +1,12 @@
+.CategoryList {
+  background-color: var(--primary-light);
+  color: white;
+  /* height: 100%; */
+}
+
+@media only screen and (min-width: 800px) {
+  .CategoryList {
+    min-width: 200px;
+    overflow-y: auto;
+  }
+}

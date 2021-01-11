@@ -1,0 +1,29 @@
+.SearchBar {
+  background-color: var(--primary-light);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  position: sticky;
+  top: 8px;
+  z-index: 2;
+}
+
+.Items {
+  padding: 0.3rem;
+}
+
+.SearchInput {
+  color: white;
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 800px) {
+  .SearchBar {
+    top: 0px;
+  }
+}
