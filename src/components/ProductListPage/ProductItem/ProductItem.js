@@ -11,6 +11,9 @@ const ProductItem = (props) => {
           <Typography variant="h5" component="h2">
             { props.name }
           </Typography>
+          <Typography variant="body2" component="h3">
+            { props.category }
+          </Typography>
           <Typography variant="body2" component="p">
             Quantity: { props.quantity }
           </Typography>
