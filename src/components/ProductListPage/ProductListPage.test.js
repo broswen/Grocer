@@ -8,7 +8,7 @@ test('render empty products', () => {
   const onClick = jest.fn();
   const {getByTestId} = render(<ProductListPage products={products} click={onClick} category=""/>);
   const list = getByTestId("product-list-page");
-  expect(list.childElementCount).toBe(2);
+  expect(list.childElementCount).toBe(3);
 });
 
 test('render multiple products', () => {
