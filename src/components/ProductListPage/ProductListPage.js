@@ -19,9 +19,9 @@ const ProductListPage = (props) => {
   }, [search, props.category, props.products]);
 
   return (
-    <div className="ProductListPage">
+    <div className="ProductListPage" data-testid="product-list-page">
       <SearchBar changed={setSearch}/>
-      <div className="ProductList">
+      <div className="ProductList" data-testid="product-list">
         {
           filteredProducts.map(product => (
             <ProductItem key={product.id} {...product} click={() => props.click(product)}/>
